@@ -1,6 +1,5 @@
 //  Takes two integer command line arguments i and k and converts i to base k
 //  For bases greater than 10, letters A - F represents the 11th - 16th digit
-
 public class Kary {
     public static void main(String[] args) {
         // read in the command-line argument

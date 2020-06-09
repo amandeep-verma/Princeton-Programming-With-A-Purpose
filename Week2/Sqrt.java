@@ -1,5 +1,4 @@
 // Newton-Raphson method of finding the square root
-
 public class Sqrt {
     public static void main(String[] args) {
         double EPS = 1.0E-15; // 1.0^(-15)

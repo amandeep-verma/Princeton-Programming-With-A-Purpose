@@ -1,5 +1,4 @@
 // Program takes input as the a number and prints all the factorials
-
 public class Fact {
     public static void main(String[] args) {
         long number = Long.parseLong(args[0]);

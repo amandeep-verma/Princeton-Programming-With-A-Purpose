@@ -1,22 +1,26 @@
-/*
- 2D random walk. A two-dimensional random walk simulates the behavior of a particle
- moving in a grid of points. At each step, the random walker moves north, south, east, or west
- with probability equal to 1/4, independent of previous moves.
- Program RandomWalker that takes an integer command-line argument n and estimates how long
- it will take a random walker to hit the boundary of a 2n-by-2n square centered at the starting point.
-*/
+/* *****************************************************************************
+ A Java programmer begins walking aimlessly. At each time step, she takes one step in a random
+ direction (either north, east, south, or west), each with probability 25%. She stops once she
+ is at Manhattan distance r from the starting point. How many steps will the random walker take?
+ This process is known as a two-dimensional random walk.
+ THe program RandomWalker.java that takes an integer command-line argument r and simulates the
+ motion of a random walk until the random walker is at Manhattan distance r from the starting
+ point. Print the coordinates at each step of the walk (including the starting and ending points),
+ treating the starting point as (0, 0). Also, print the total number of steps taken.
+ This process is a discrete version of a natural phenomenon known as Brownian motion
+ **************************************************************************** */
 
 public class RandomWalker {
     public static void main(String[] args) {
 
-        int n = Integer.parseInt(args[0]);
+        int r = Integer.parseInt(args[0]);
 
-        int i = (n / 2);
-        int j = (n / 2);
+        int i = 0;
+        int j = 0;
 
-        int timeStep = 0;
-        while (i != 0 && i != n - 1 && j != 0 && j != n - 1) {
-            // System.out.println("trace " + i + " " + j);
+        int steps = 0;
+        while (Math.abs(i) + Math.abs(j) != r) {
+            System.out.println("(" + i + ", " + j + ")");
             double a = Math.random();
             if (a < 0.25)
                 i = i - 1; // west
@@ -27,10 +31,10 @@ public class RandomWalker {
             else
                 j = j + 1; // north
 
-            timeStep++;
+            steps++;
         }
-        // System.out.println("trace " + i + " " + j);
-        System.out.println(timeStep);
+        System.out.println("(" + i + ", " + j + ")");
+        System.out.println("steps = " + steps);
 
     }
 }

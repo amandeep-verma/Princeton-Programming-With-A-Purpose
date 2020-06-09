@@ -1,6 +1,5 @@
 //  program PrimeCounter that takes an integer command-line argument n and
 //  finds the number of primes less than or equal to n.
-
 public class PrimeCounter {
     public static void main(String[] args) {
         int number = Integer.parseInt(args[0]);
