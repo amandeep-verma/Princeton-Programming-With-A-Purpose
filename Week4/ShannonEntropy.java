@@ -1,4 +1,9 @@
-/* *****************************************************************************
+/* ****************************************************************************
+*Write a program ShannonEntropy.java that takes a command-line integer m; reads a sequence of integers 
+between 1 and m from standard input; and prints the Shannon entropy to standard output, with 4 digits after 
+the decimal point. 
+The Shannon entropy is a measure of the rate of information produced by a random source, such as the outcomes of flipping a fair coin or rolling a loaded die. 
+It is a fundamental concept in information theory and data compression.
  **************************************************************************** */
 
 public class ShannonEntropy {

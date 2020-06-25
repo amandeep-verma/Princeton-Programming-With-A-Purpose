@@ -1,4 +1,7 @@
 /* *****************************************************************************
+ Program Checkerboard.java that takes a command-line integer n and plots an n-by-n checkerboard 
+ pattern to standard drawing. Color the squares blue and light gray, with the bottom-left square blue.
+ Call StdDraw.setScale(0, n) so that x- and y-coordinates of the canvas range from 0 and n.
  **************************************************************************** */
 
 import java.awt.Color;
