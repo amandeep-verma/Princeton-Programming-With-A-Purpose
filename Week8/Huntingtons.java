@@ -80,7 +80,6 @@ public class Huntingtons {
     public static void main(String[] args) {
         String filename = args[0];
         In in = new In(filename);
-
         String seq = in.readAll();
         seq = removeWhitespace(seq);
         int maxCAG = maxRepeats(seq);
