@@ -1,8 +1,8 @@
 /*
-The code aims at simulating the projectile motion with boucing factor of the object after hitting ground.
-Here the ball reduces the y direction component(bouncing factor) and x direction velocity, every time it
+The code aims at simulating the projectile motion of a ball and futher motion after hitting ground.
+Here the ball reduces the y direction component(bouncing factor) and x direction component(due to friction), every time it
 touches the ground.
-The value of everything has been lowered by diving it with number 100. Gravitatioanl pull(G) = 9.8is take as 0.098
+The value of everything has been scaled down by 100 so things can fit it in frame (Gravitatioanl pull(G) = 9.8is take as 0.098)
 */
 
 public class Projectile {
