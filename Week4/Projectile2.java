@@ -12,7 +12,7 @@ Note:
 Using Euler's method
 To understand the equations -> https://www.youtube.com/watch?v=OukRTF6Bgcc
 
-The execution gets easier if you chose to go with the files Projections.java and Elements.java in the same folder.
+The execution gets much easier if you chose to go with the files Projections.java and Elements.java in the same folder.
 */
 
 
